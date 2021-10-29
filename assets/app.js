@@ -34,12 +34,12 @@ const app = new Vue({
         slideUp() {
             --this.counter;
             if (this.counter < 0) {
-                this.counter = this.slides.lenght - 1;
+                this.counter = this.slides.length - 1;
             }
         },
         slideDown() {
             ++this.counter;
-            if (this.counter > this.slides.lenght - 1) {
+            if (this.counter > this.slides.length - 1) {
                 this.counter = 0;
             }
         }
