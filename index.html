@@ -18,14 +18,14 @@
         </div>
         <div class="thumbs">
             <div class="arrows">
-                <span class="bottone-su">&#5169; </span>
+                <span @click= "slideUp"class="bottone-su">&#5169; </span>
                 <span class="bottone-giu">&#5167;</span>
             </div>
-            <ul style="list-style-type: none;">
-                <li v-for= "slide in slides" class="icona">
+            <div style="list-style-type: none;">
+                <div v-for= "slide in slides" class="icona">
                     <img v-bind:src="slide.image" alt="" class="img">
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
