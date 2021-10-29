@@ -18,11 +18,11 @@
         </div>
         <div class="thumbs">
             <div class="arrows">
-                <span @click= "counter -= 1 " class="bottone-su">&#5169; </span>
-                <span @click= "counter += 1" class="bottone-giu">&#5167;</span>
+                <span @click= "slideUp" class="bottone-su">&#5169; </span>
+                <span @click= "slideDown" class="bottone-giu">&#5167;</span>
             </div>
             <div style="list-style-type: none;">
-                <div v-for= "slide in slides" class="icona">
+                <div v-for= "(slide, index) in slides" class="icona" :class="index == counter ? 'active' : '' "  >
                     <img v-bind:src="slide.image" alt="" class="img">
                 </div>
             </div>
