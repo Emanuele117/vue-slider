@@ -31,8 +31,6 @@ const app = new Vue({
         ]
     },
     methods: {
-        slideUp() {
 
-        }
     }
 })
